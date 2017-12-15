@@ -115,12 +115,6 @@ bool Currency::getBlockReward(size_t medianSize, size_t currentBlockSize, uint64
   emissionChange = penalizedBaseReward - (fee - penalizedFee);
   reward = penalizedBaseReward + penalizedFee;
 
-  //HK: Let's give genesis block miner a truck load of the supply (half)
-  if (alreadyGeneratedCoins / m_moneySupply <= 0.333) {
-    logger(INFO, BRIGHT_GREEN) << "Pre-mining, let's get a lot!!!";
-    reward = m_moneySupply * 0.03;
-  }
-
   return true;
 }
 
