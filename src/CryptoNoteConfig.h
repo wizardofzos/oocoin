@@ -33,14 +33,14 @@ const size_t   CRYPTONOTE_REWARD_BLOCKS_WINDOW               = 100;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE     = 10000; //size of block (bytes) after which reward for block calculated using block size
 const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE        = 600;
 //TODO Define number of digits
-const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 8;
+const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 2;
 //TODO Define minimum fee for transactions
-const uint64_t MINIMUM_FEE                                   = 10; // HK: Let's make it so that we HAVE to pay some per trans
+const uint64_t MINIMUM_FEE                                   = 1295; // HK: Let's make it so that we HAVE to pay some per trans
 								    //     Should really make it so it's a gliding percentage of transaction size :)
 const uint64_t DEFAULT_DUST_THRESHOLD                        = MINIMUM_FEE;
 
 //TODO Define preferred block's target time
-const uint64_t DIFFICULTY_TARGET                             = 15; // HK: Want a block every .. seconds
+const uint64_t DIFFICULTY_TARGET                             = 60; // HK: Want a block every .. seconds
 const uint64_t EXPECTED_NUMBER_OF_BLOCKS_PER_DAY             = 24 * 60 * 60 / DIFFICULTY_TARGET;
 //TODO There are options to tune CryptoNote's difficulty retargeting function.
 //TODO We recommend not to change it.
@@ -75,9 +75,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 //TODO Put here the name of your currency
 const char     CRYPTONOTE_NAME[]                             = "oocoin";
-const char GENESIS_COINBASE_TX_HEX[] = "010501ff000180c8afa025029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101d061bbcfa65ed2e81a0483ce761c45ccc3afbd1d5b91990c245b4140b2469d42";
-
-
+const char GENESIS_COINBASE_TX_HEX[] = "010501ff000180e8eda1ba01029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101289f12873af61e381d8c7b5927b125fc0d7d1480677386b9e24851925745e963";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
