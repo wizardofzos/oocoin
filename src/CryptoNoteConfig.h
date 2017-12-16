@@ -40,7 +40,7 @@ const uint64_t MINIMUM_FEE                                   = 10; // HK: Let's 
 const uint64_t DEFAULT_DUST_THRESHOLD                        = MINIMUM_FEE;
 
 //TODO Define preferred block's target time
-const uint64_t DIFFICULTY_TARGET                             = 240; // HK: Want a block every .. seconds
+const uint64_t DIFFICULTY_TARGET                             = 15; // HK: Want a block every .. seconds
 const uint64_t EXPECTED_NUMBER_OF_BLOCKS_PER_DAY             = 24 * 60 * 60 / DIFFICULTY_TARGET;
 //TODO There are options to tune CryptoNote's difficulty retargeting function.
 //TODO We recommend not to change it.
@@ -75,13 +75,13 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 //TODO Put here the name of your currency
 const char     CRYPTONOTE_NAME[]                             = "oocoin";
-const char GENESIS_COINBASE_TX_HEX[] = "010501ff000180d89296cab56c029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121011c88de050eb242f2ac3a862fb687d4b59bfb3d09112fb323b0cadbcc65639b44";
+const char GENESIS_COINBASE_TX_HEX[] = "010501ff000180f0badde597bc08029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101a2c122ea2aac3ffd720b392af69e710c2804591fecbb7b4f15f98c2ca0adf3fa";
 
 
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
-const uint8_t  BLOCK_MINOR_VERSION_0                         =  8;
+const uint8_t  BLOCK_MINOR_VERSION_0                         =  9;
 
 const size_t   BLOCKS_IDS_SYNCHRONIZING_DEFAULT_COUNT        =  10000;  //by default, blocks ids count in synchronizing
 const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  200;    //by default, blocks count in blocks downloading
