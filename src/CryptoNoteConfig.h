@@ -24,7 +24,7 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 //TODO Specify total number of available coins
 //TODO ((uint64_t)(-1)) equals to 18446744073709551616 coins
 //TODO or you can define number explicitly UINT64_C(858986905600000000)
-const uint64_t MONEY_SUPPLY                                  =  10000000000000; //HK: [decimal places=10]
+const uint64_t MONEY_SUPPLY                                  =  100000000000; //HK: [decimal places=10]
 const unsigned EMISSION_SPEED_FACTOR                         = 21;           //HK: ths is just black magic guessing
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
@@ -40,7 +40,7 @@ const uint64_t MINIMUM_FEE                                   = 100000; // HK: Le
 const uint64_t DEFAULT_DUST_THRESHOLD                        = MINIMUM_FEE;
 
 //TODO Define preferred block's target time
-const uint64_t DIFFICULTY_TARGET                             = 15; // HK: Want a block every .. seconds
+const uint64_t DIFFICULTY_TARGET                             = 240; // HK: Want a block every .. seconds
 const uint64_t EXPECTED_NUMBER_OF_BLOCKS_PER_DAY             = 24 * 60 * 60 / DIFFICULTY_TARGET;
 //TODO There are options to tune CryptoNote's difficulty retargeting function.
 //TODO We recommend not to change it.
@@ -75,7 +75,8 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 //TODO Put here the name of your currency
 const char     CRYPTONOTE_NAME[]                             = "oocoin";
-const char GENESIS_COINBASE_TX_HEX[] = "010501ff0001ffffffffffffffff7f029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101a02ce89750b1045ea38b59a48decbb93ec5282db183cc5b43ef92e6b91356f5e";
+const char GENESIS_COINBASE_TX_HEX[] = "010501ff00019e8d1d029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101b4c4effe7525743c63f0f4a50e8cd0c614912a612d402433161126b0ecc49f29";
+
 
 
 
