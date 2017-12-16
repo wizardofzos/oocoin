@@ -24,8 +24,8 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 //TODO Specify total number of available coins
 //TODO ((uint64_t)(-1)) equals to 18446744073709551616 coins
 //TODO or you can define number explicitly UINT64_C(858986905600000000)
-const uint64_t MONEY_SUPPLY                                  =  (uint64_t)(-1); //HK: [decimal places=10]
-const unsigned EMISSION_SPEED_FACTOR                         = 1;           //HK: ths is just black magic guessing
+const uint64_t MONEY_SUPPLY                                  =  10000000000000; //HK: [decimal places=10]
+const unsigned EMISSION_SPEED_FACTOR                         = 21;           //HK: ths is just black magic guessing
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
 //TODO Define number of blocks for block size median calculation
@@ -81,7 +81,7 @@ const char GENESIS_COINBASE_TX_HEX[] = "010501ff0001ffffffffffffffff7f029b2e4c02
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
-const uint8_t  BLOCK_MINOR_VERSION_0                         =  4;
+const uint8_t  BLOCK_MINOR_VERSION_0                         =  6;
 
 const size_t   BLOCKS_IDS_SYNCHRONIZING_DEFAULT_COUNT        =  10000;  //by default, blocks ids count in synchronizing
 const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  200;    //by default, blocks count in blocks downloading
