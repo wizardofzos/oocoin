@@ -75,13 +75,13 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 //TODO Put here the name of your currency
 const char     CRYPTONOTE_NAME[]                             = "oocoin";
-const char GENESIS_COINBASE_TX_HEX[] = "010501ff0001b0b2afe301029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121017d6c38390b377af2812963fee833e9ec969fd628e94593b5603a2f154906ee6b";
+const char GENESIS_COINBASE_TX_HEX[] = "010501ff000180d89296cab56c029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121011c88de050eb242f2ac3a862fb687d4b59bfb3d09112fb323b0cadbcc65639b44";
 
 
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
-const uint8_t  BLOCK_MINOR_VERSION_0                         =  7;
+const uint8_t  BLOCK_MINOR_VERSION_0                         =  8;
 
 const size_t   BLOCKS_IDS_SYNCHRONIZING_DEFAULT_COUNT        =  10000;  //by default, blocks ids count in synchronizing
 const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  200;    //by default, blocks count in blocks downloading
