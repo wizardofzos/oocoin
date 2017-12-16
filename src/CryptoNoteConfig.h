@@ -35,7 +35,7 @@ const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE        = 600;
 //TODO Define number of digits
 const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 8;
 //TODO Define minimum fee for transactions
-const uint64_t MINIMUM_FEE                                   = 100000; // HK: Let's make it so that we HAVE to pay some per trans
+const uint64_t MINIMUM_FEE                                   = 10; // HK: Let's make it so that we HAVE to pay some per trans
 								    //     Should really make it so it's a gliding percentage of transaction size :)
 const uint64_t DEFAULT_DUST_THRESHOLD                        = MINIMUM_FEE;
 
@@ -75,14 +75,13 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 //TODO Put here the name of your currency
 const char     CRYPTONOTE_NAME[]                             = "oocoin";
-const char GENESIS_COINBASE_TX_HEX[] = "010501ff00019e8d1d029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101b4c4effe7525743c63f0f4a50e8cd0c614912a612d402433161126b0ecc49f29";
-
+const char GENESIS_COINBASE_TX_HEX[] = "010501ff0001b0b2afe301029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121017d6c38390b377af2812963fee833e9ec969fd628e94593b5603a2f154906ee6b";
 
 
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
-const uint8_t  BLOCK_MINOR_VERSION_0                         =  6;
+const uint8_t  BLOCK_MINOR_VERSION_0                         =  7;
 
 const size_t   BLOCKS_IDS_SYNCHRONIZING_DEFAULT_COUNT        =  10000;  //by default, blocks ids count in synchronizing
 const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  200;    //by default, blocks count in blocks downloading
