@@ -24,7 +24,7 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 //TODO Specify total number of available coins
 //TODO ((uint64_t)(-1)) equals to 18446744073709551616 coins
 //TODO or you can define number explicitly UINT64_C(858986905600000000)
-const uint64_t MONEY_SUPPLY                                  = UINT64_C(858986905600000000); //HK: [decimal places=10]
+const uint64_t MONEY_SUPPLY                                  = 1000000; //HK: [decimal places=10]
 const unsigned EMISSION_SPEED_FACTOR                         = 1;           //HK: ths is just black magic guessing
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
@@ -33,9 +33,9 @@ const size_t   CRYPTONOTE_REWARD_BLOCKS_WINDOW               = 100;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE     = 10000; //size of block (bytes) after which reward for block calculated using block size
 const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE        = 600;
 //TODO Define number of digits
-const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 10;
+const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 5;
 //TODO Define minimum fee for transactions
-const uint64_t MINIMUM_FEE                                   = 10000000; // HK: Let's make it so that we HAVE to pay some per trans
+const uint64_t MINIMUM_FEE                                   = 0.1; // HK: Let's make it so that we HAVE to pay some per trans
 								    //     Should really make it so it's a gliding percentage of transaction size :)
 const uint64_t DEFAULT_DUST_THRESHOLD                        = MINIMUM_FEE;
 
@@ -75,7 +75,9 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 //TODO Put here the name of your currency
 const char     CRYPTONOTE_NAME[]                             = "oocoin";
-const char GENESIS_COINBASE_TX_HEX[] = "010501ff0001f8a181eff50b029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121010d16e041f65785ae0e5b8c833baabd16f38142b0d0f9700e5f3b074fec1f8d06";
+const char GENESIS_COINBASE_TX_HEX[] = "010501ff0001a0c21e029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210115cd9db3bc55020efece5f535bb5dc6b10fb54aaf718ccdab7df5bc268009c64";
+
+
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
