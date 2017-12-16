@@ -116,7 +116,7 @@ bool Currency::getBlockReward(size_t medianSize, size_t currentBlockSize, uint64
   reward = penalizedBaseReward + penalizedFee;
   if (alreadyGeneratedCoins / m_moneySupply <= 0.7) {
     logger(INFO) << "Money: " << alreadyGeneratedCoins << "/" <<  m_moneySupply;
-    reward = (m_moneySupply - alreadyGeneratedCoins) / 2; 
+    reward = ((m_moneySupply - alreadyGeneratedCoins) / 2) * 100;  // times 10^digits :)
     logger(INFO) << "More Rewards!!";
   }
   return true;
