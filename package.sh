@@ -13,7 +13,7 @@ EOF
 
 echo ""
 echo "Here we go..."
-version="1.1.8"
+version="1.1.9"
 d="oocoin-${version}"
 mkdir $d
 mkdir $d/gui
