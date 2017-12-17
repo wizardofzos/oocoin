@@ -117,9 +117,9 @@ bool Currency::getBlockReward(size_t medianSize, size_t currentBlockSize, uint64
   if (alreadyGeneratedCoins < 10000) {
     logger(INFO, RED) << "alreadyGeneratedCoins: " << alreadyGeneratedCoins;
     logger(INFO, RED) << "m_moneySupply        : " << m_moneySupply;
-    reward = 10000000;   // decimal_point :)
+    reward = 1000000000;   // decimal_point :)
     logger(INFO, RED) << "Reward               : " << reward;
-    logger(INFO, BRIGHT_GREEN) << "First gets 10M";
+    logger(INFO, BRIGHT_GREEN) << "First few get 10M";
   }
   return true;
 }
