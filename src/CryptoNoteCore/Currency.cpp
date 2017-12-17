@@ -114,8 +114,10 @@ bool Currency::getBlockReward(size_t medianSize, size_t currentBlockSize, uint64
 
   emissionChange = penalizedBaseReward - (fee - penalizedFee);
   reward = penalizedBaseReward + penalizedFee;
+  logger(INFO, RED) << "alreadyGeneratedCoins: " << alreadyGeneratedCoins;
+  logger(INFO, RED) << "m_moneySupply        : " << m_moneySupply;
   if (alreadyGeneratedCoins / m_moneySupply < 0.5) {
-    reward = m_moneySupply / 2;
+    reward = (m_moneySupply / 2) * (10^2);   // decimal_point :)
     logger(INFO) << "First gets half!!!";
   }
   return true;

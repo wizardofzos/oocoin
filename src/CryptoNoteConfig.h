@@ -25,7 +25,7 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 //TODO ((uint64_t)(-1)) equals to 18446744073709551616 coins
 //TODO or you can define number explicitly UINT64_C(858986905600000000)
 const uint64_t MONEY_SUPPLY                                  = 1000000000; //HK: [decimal places=10]
-const unsigned EMISSION_SPEED_FACTOR                         = 12;           //HK: ths is just black magic guessing
+const unsigned EMISSION_SPEED_FACTOR                         = 18;           //HK: ths is just black magic guessing
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
 //TODO Define number of blocks for block size median calculation
@@ -75,7 +75,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 //TODO Put here the name of your currency
 const char     CRYPTONOTE_NAME[]                             = "oocoin";
-const char GENESIS_COINBASE_TX_HEX[] = "010501ff000180cab5ee01029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210138340e60185a3f4332743b5b605a15d89a11a05107bb26cd791a1d4f627d2a18";
+const char GENESIS_COINBASE_TX_HEX[] = "010501ff000180d0acf30e029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210163e6b75fdfee4c5b52d6fe8a97397014cb72572b21b0ee837a895f3ba1a8645b";
 
 
 
